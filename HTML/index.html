@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body id="page">
+    <div class="container" id="container">
+        <div class="card">
+            <h1 class="title">Calculator</h1>
+            <p id="alert"></p>
+            <input  id="result" placeholder="0">
+            <div class="num-container">
+                <div class="number-box">
+                    <button id="btn" onclick="input(7)">7</button>
+                    <button id="btn" onclick="input(8)">8</button>
+                    <button id="btn" onclick="input(9)">9</button>
+                    <button id="btn" onclick="input('*')">*</button>
+                    
+                    <button id="btn" onclick="input(4)">4</button>
+                    <button id="btn" onclick="input(5)">5</button>
+                    <button id="btn" onclick="input(6)">6</button>
+                    <button id="btn" onclick="input('-')">-</button>
+                    
+                    <button id="btn" onclick="input(1)">1</button>
+                    <button id="btn" onclick="input(2)">2</button>
+                    <button id="btn" onclick="input(3)">3</button>
+                    <button id="btn" onclick="input('+')">+</button>
+                    
+                    <button id="btn" onclick="input(0)">0</button>
+                    <button id="btn" onclick="cancel()">C</button>
+                    <button id="btn" onclick="calc()">=</button>
+                    <button id="btn" onclick="input('/')">/</button>
+
+                    <button id="btn" style="width:40%;" onclick="even()">EVEN</button>
+                    <button id="btn" style="width:40%;" onclick="odd()">ODD</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../Javascript/app.js"></script>
+</body>
+</html>
