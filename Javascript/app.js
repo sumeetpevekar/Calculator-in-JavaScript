@@ -14,7 +14,11 @@ function calc(){
 function cancel(){
     result.value = "";
 }
-
+function calcInput (e) {
+    if(e.key == "Enter"){
+        calc()
+    }
+}
 function even(){
     var a = result.value;
     var print = document.getElementById("alert");
